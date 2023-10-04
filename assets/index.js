@@ -7,13 +7,13 @@ const generateReadme = (obj) => {
     return `# ${name}
 
 # Table of Contents
-* [Description](##-Description)
-* [Installation](##-Installation)
-* [Usage](##-Usage)
-* [Contribution](##-Contribution)
-* [Tests](##-Tests)
-* [License](##-License)
-* [Questions](##-Questions)
+* [Description](#Description)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Contribution](#Contribution)
+* [Tests](#Tests)
+* [License](#License)
+* [Questions](#Questions)
 
 ## Description
 ${description}
