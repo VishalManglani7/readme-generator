@@ -1,12 +1,12 @@
 # Readme
 
 # Table of Contents
-* [Description](##-Description)
-* [Installation](##-Installation)
-* [Usage](##-Usage)
-* [Contribution](##-Contribution)
-* [Tests](##-Tests)
-* [License](##-License)
+* [Description](#Description)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Contribution](#Contribution)
+* [Tests](#Tests)
+* [License](#License)
 * [Questions](#Questions)
 
 ## Description
