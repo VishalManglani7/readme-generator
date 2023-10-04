@@ -1,45 +1,41 @@
 const inquirer = require ("inquirer");
 const fs = require ("fs");
 
-const generateReadme = (obj) =>{
-    const { name, description, installation, usage, contribution, test, license, email} = obj;
+const generateReadme = (obj) => {
+    const { name, description, installation, usage, contribution, test, license, email, github } = obj;
 
-    return ` <!DOCTYPE html>
-    <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>${name}</title>
-    </head>
-    
-    <body>
-        <h1>${name}</h1>
-    
-        <h2>Description</h2>
-        <p>${description}</p>
-    
-        <h2>Installation</h2>
-        <p>${installation}</p>
-    
-        <h2>Usage</h2>
-        <p>${usage}</p>
-    
-        <h2>Contribution</h2>
-        <p>${contribution}</p>
-    
-        <h2>Tests</h2>
-        <p>${test}</p>
-    
-        <h2>License</h2>
-        <p>${license}</p>
-    
-        <p>For questions please contact: ${email}</p>
-    
-    </body>
-    
-    </html>`;}
+    return `# ${name}
+
+# Table of Contents
+* [Description](##-Description)
+* [Installation](##-Installation)
+* [Usage](##-Usage)
+* [Contribution](##-Contribution)
+* [Tests](##-Tests)
+* [License](##-License)
+* [Questions](##-Questions)
+
+## Description
+${description}
+
+## Installation
+${installation}
+
+## Usage
+${usage}
+
+## Contribution
+${contribution}
+
+## Tests
+${test}
+
+## License
+${license}
+
+## Questions
+For questions please contact: ${email}
+[GitHub](https://github.com/${github})`;}
 
 
 inquirer
@@ -50,23 +46,23 @@ inquirer
         },
         {type: "input",
         name: "description",
-        message: "Enter description for readme",
+        message: "Enter description for readme:",
         },
         {type: "input",
         name: "installation",
-        message: "Enter installation instructions",
+        message: "Enter installation instructions:",
         },
         {type: "input",
         name: "usage",
-        message: "Enter useage info",
+        message: "Enter usage info:",
         },
         {type: "input",
         name: "contribution",
-        message: "Enter contribution guidelnes",
+        message: "Enter contribution guidelines:",
         },
         {type: "input",
         name: "test",
-        message: "Enter test guidelines",
+        message: "Enter test guidelines:",
         },
         {type: "checkbox",
         name: "license",
@@ -77,8 +73,12 @@ inquirer
             "GPL",
         ]},
         {type: "input",
-        message: "email",
-        message: "Enter email address",
+        name: "email",
+        message: "Enter email address:",
+        },
+        {type: "input",
+        name: "github",
+        message: "Enter github username:",
         },
     ])
     .then((answers)=>{
