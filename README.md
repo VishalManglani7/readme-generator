@@ -32,11 +32,11 @@ THEN I am taken to the corresponding section of the README
 ```
 
 ## Visuals
-[Readme Demo via Google Drive](https://drive.google.com/file/d/1kFch0YzhY_M0zjlmUKn-qOeQ1qOmKcWW/view)
+[Readme Demo via Google Drive](https://drive.google.com/file/d/1WCIQrnw-6O3VR6s9tmP3eKA1yPT6LorD/view)
 
 [Downloadable link of video in assets file](https://github.com/VishalManglani7/readme-generator/blob/main/assets/readmegendemo.webm)
 
-README-gen.md file is an example of a generated Readme created by this app.
+README.md file in asssets file is an example of a generated Readme created by this app.
 
 ## License
 
